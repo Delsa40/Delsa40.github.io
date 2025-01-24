@@ -33,8 +33,7 @@ nav{
 button{
     width: 100px;
     height: 40px;
-    background-color:black;
-    color: #fff;
+    background: none;
     position: relative;
     display: flex;
     justify-content: center;
@@ -44,17 +43,13 @@ button{
 }
 
 button:hover{
-    background: none;
+    border: none;
     transition: all 0.3s ease;
-}
-
-button:hover .atajo {
-    color: black;
 }
 
 .atajo{
     text-decoration: none;
-    color: #fff;
+    color: black;
     background: none;
     position: absolute;
     display: flex;
