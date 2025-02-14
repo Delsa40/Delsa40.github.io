@@ -17,6 +17,7 @@ body {
 
 #nombre{
     font-style: italic;
+    margin: 20px;
 }
 
 nav{
@@ -119,7 +120,7 @@ button:hover{
 }
 
 .proyectos:hover > p{
-    opacity: 80%;
+    opacity: 90%;
     transition: opacity 0.3s ease;
 }
 
@@ -200,6 +201,42 @@ button:hover{
     z-index: 10;
 }
 
+/* BOTON IR ARRIBA */
+
+#botonIrArriba{
+    background-color: #fff;
+    color: black;
+    position: fixed;
+    right: 35px;
+    bottom: 20px;
+    border-radius: 50%;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 30px;
+    height: 30px;
+}
+
+#subir{
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+#subir:visited{
+    color: black;
+}
+
+#subir:active{
+    color: black;
+}
+
 /* MEDIA QUERIES */
 
 @media (width < 1030px) {
@@ -227,11 +264,18 @@ button:hover{
     }
     .proyectos{
         margin-bottom: 10px;
+        display: block;
     }
     .proyectos p{
-        opacity: 60%;
         font-size: 15px;
+        position: relative;
+        opacity: 1;
     }
+
+    .proyectos:hover p{
+        opacity: 1;
+    }
+
     .conocimientos{
         font-size: 60px;
     }
@@ -263,5 +307,12 @@ button:hover{
     }
     footer{
         height: 200px;
+    }
+}
+
+@media (width < 502px) {
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
