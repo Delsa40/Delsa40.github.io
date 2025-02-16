@@ -73,7 +73,7 @@ button:hover{
 #presentacion p{
     padding: 2rem;
     margin: 0;
-    font-size: 30px;
+    font-size: 2.5vw;
     background-color: rgb(227, 227, 227);
 }
 
@@ -122,6 +122,11 @@ button:hover{
 .proyectos:hover > p{
     opacity: 90%;
     transition: opacity 0.3s ease;
+}
+
+.enlaceResponsive{
+    display: none;
+    color: aqua;
 }
 
 .fotosproyectos{
@@ -226,7 +231,7 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: large;
+    font-size: 20px;
 }
 
 #subir:visited{
@@ -240,9 +245,6 @@ button:hover{
 /* MEDIA QUERIES */
 
 @media (width < 1030px) {
-    #presentacion p{
-        font-size: 20px;
-    }
     .conocimientos{
         font-size: 80px;
     }
@@ -255,25 +257,27 @@ button:hover{
 }
 
 @media (width < 860px) {
-    #presentacion p{
-        font-size: 15px;
-        padding: 1rem;
-    }
     #seccionProyectos{
         display: block;
     }
     .proyectos{
         margin-bottom: 10px;
         display: block;
+        cursor: default;
     }
     .proyectos p{
         font-size: 15px;
         position: relative;
         opacity: 1;
+        margin-bottom: 30px;
     }
 
     .proyectos:hover p{
         opacity: 1;
+    }
+
+    .enlaceResponsive{
+        display: inline;
     }
 
     .conocimientos{
@@ -284,14 +288,22 @@ button:hover{
     }
 }
 
-@media (width < 630px) {
+@media (width < 670px){
     #presentacion{
         display: block;
         margin: 10%;
     }
+    #presentacion p{
+        font-size: 20px;
+        color: #fff;
+        background-color: black;
+    }
     #fotoperfil{
         width: 100%;
     }
+}
+
+@media (width < 630px) {
     #seccionProyectos{
         display: block;
         margin: 10%;
@@ -314,5 +326,9 @@ button:hover{
     nav{
         flex-wrap: wrap;
         justify-content: center;
+    }
+    #presentacion p{
+        font-size: 15px;
+        padding: 1rem;
     }
 }
