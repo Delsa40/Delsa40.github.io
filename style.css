@@ -292,13 +292,12 @@ button:hover{
     #presentacion{
         display: block;
         margin: 10%;
+        background-color: black;
     }
     #presentacion p{
         font-size: 20px;
         color: #fff;
         background-color: black;
-        position: relative;
-        top: -10px;
     }
     #fotoperfil{
         width: 100%;
