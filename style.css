@@ -88,15 +88,16 @@ button:hover{
 
 #seccionProyectos {
     margin: 100px;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 16px;
+    gap: 16px; */
 }
 
 .proyectos{
     border-radius: 10px;
     position: relative;
     display: flex;
+    margin-bottom: 40px;
     cursor: pointer;
     animation: popup linear both;
     animation-timeline: view();
