@@ -88,16 +88,16 @@ button:hover{
 
 #seccionProyectos {
     margin: 100px;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 16px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
 }
 
 .proyectos{
     border-radius: 10px;
     position: relative;
     display: flex;
-    margin-bottom: 40px;
     cursor: pointer;
     animation: popup linear both;
     animation-timeline: view();
@@ -115,7 +115,6 @@ button:hover{
     z-index: 2;
     background-color: black;
     opacity: 0;
-    font-size: 30px;
     border-radius: 10px;
     transition: opacity 0.3s ease;
 }
@@ -136,9 +135,26 @@ button:hover{
     border-radius: 10px;
 }
 
-#importante{
-    grid-column-start: 1;
-    grid-column-end: 3;
+#Garagecompleto{
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    font-size: 30px;
+}
+
+#Pedidos{
+    grid-row-start: 3;
+    font-size: 18px;
+}
+
+#Recepcionador{
+    grid-row-start: 3;
+    font-size: 18px;
+}
+
+#AppGaragecompleto{
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    font-size: 30px;
 }
 
 @keyframes popup{
@@ -248,16 +264,45 @@ button:hover{
 }
 
 /* MEDIA QUERIES */
+@media (width < 1120px) {
 
-@media (width < 1030px) {
-    .proyectos p{
+    #Garagecompleto{
         font-size: 25px;
     }
+    #AppGaragecompleto{
+        font-size: 25px;
+    }
+    #Pedidos{
+        font-size: 15px;
+    }
+    #Recepcionador{
+        font-size: 15px;
+    }
+}
+
+@media (width < 1030px) {
+    
     .contactos{
         font-size: 80px;
     }
     footer{
         height: 50px;
+    }
+}
+
+@media (width < 980px) {
+
+    #Garagecompleto{
+        font-size: 20px;
+    }
+    #AppGaragecompleto{
+        font-size: 20px;
+    }
+    #Pedidos{
+        font-size: 12px;
+    }
+    #Recepcionador{
+        font-size: 12px;
     }
 }
 
